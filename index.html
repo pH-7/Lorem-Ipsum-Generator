@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Lorem Ipsum Generator</title>
+        <meta name="description" content="Lorem Ipsum Generator. Free Online Service. Lorem Ipsum with HTML, Text and Plain format." />
+        <meta name="keywords" content="lorem, ipsum, generator, free, service, generate, text, string, character, online service" />
+        <meta name="author" content="Pierre-Henry Soria" />
+        <link rel="stylesheet" href="./skins/basic/css/common.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="center"><a href="./">¡Lorem Ipsum Generator!</a></h1>
+        </header>
+
+        <noscript><p class="center warning">Please enable JavaScript in your browser!</p></noscript>
+
+        <section role="main" id="container">
+            <form method="post" name="loremipsum">
+                <p>
+                    <label for="format">Output Format:</label>
+                    <select id="format">
+                        <option value="text">Text</option>
+                        <option value="html">HTML</option>
+                        <option value="plain">Plain</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="number">Number of Words:</label> <input type="number" id="number" value="300" required />
+                </p>
+
+                <p><textarea id="output" cols="100" rows="22" onclick="this.select()" readonly></textarea></p>
+                <p><button type="button" id="submit" class="bold">Generate!</button></p>
+            </form>
+        </section>
+
+        <footer class="center">
+            <p>By <strong><a href="http://ph-7.github.com">pH7</a></strong> &copy; <span id="copyrightYear"></span>.</p>
+        </footer>
+
+        <script>document.getElementById('copyrightYear').innerHTML=(new Date).getFullYear()</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="./ajax/a.js"></script>
+    </body>
+</html>
