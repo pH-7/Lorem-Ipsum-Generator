@@ -10,8 +10,8 @@
 
 define('PH', 1);
 
-require dirname(__DIR__) . '/lib/misc.fns.php';
-require dirname(__DIR__) . '/lib/LoremIpsum.class.php';
+require dirname(dirname(__FILE__)) . '/lib/misc.fns.php';
+require dirname(dirname(__FILE__)) . '/lib/LoremIpsum.class.php';
 
 $sNumWords = (!empty($_POST['count'])) ? $_POST['count'] : 300;
 $sFormat = (!empty($_POST['format'])) ? $_POST['format'] : '';

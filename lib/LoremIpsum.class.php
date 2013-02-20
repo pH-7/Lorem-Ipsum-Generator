@@ -82,7 +82,7 @@ class LoremIpsum
     private function _getWords()
     {
         $aWords = array();
-        $sDictPath = __DIR__ . '/loremipsum.txt';
+        $sDictPath = dirname(__FILE__) . '/loremipsum.txt';
         $aDoctWords = file($sDictPath);
 
         for ($i = 0; $i < $this->_iTotalWords; $i++)
