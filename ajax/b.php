@@ -10,16 +10,23 @@
 
 define('PH', 1);
 
-require dirname(dirname(__FILE__)) . '/lib/misc.fns.php';
 require dirname(dirname(__FILE__)) . '/lib/LoremIpsum.class.php';
+require dirname(dirname(__FILE__)) . '/lib/misc.fns.php';
 
 $sNumWords = (!empty($_POST['count'])) ? $_POST['count'] : 300;
 $sFormat = (!empty($_POST['format'])) ? $_POST['format'] : '';
 
 $iFormat = getLoremIpsumFormat($sFormat);
 
-// Create LoremIpsum object
-$oLoremIpsum = new LoremIpsum($sNumWords, $iFormat);
+try
+{
+    // Create LoremIpsum object
+    $oLoremIpsum = new LoremIpsum($sNumWords, $iFormat);
 
-// Output LoremIpsum's contents
-echo $oLoremIpsum;
+    // Output LoremIpsum's contents
+    echo $oLoremIpsum;
+}
+catch(Exception $oE)
+{
+    echo $oE->getMessage();
+}
