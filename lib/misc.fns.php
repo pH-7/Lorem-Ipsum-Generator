@@ -1,7 +1,7 @@
 <?php
 /**
- * @package          Lorem Ipsum Generator
- * @category         String
+ * @category         Lorem Ipsum Generator
+ * @package          String
  * @author           Pierre-Henry Soria <ph7software@gmail.com>
  * @copyright        (c) 2013, Pierre-Henry Soria. All Rights Reserved.
  * @link             http://github.com/pH-7/Lorem-Ipsum-Generator
