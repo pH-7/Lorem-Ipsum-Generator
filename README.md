@@ -1,7 +1,7 @@
 # Lorem Ipsum Generator
 
-**Lorem Ipsum Generator** is an application that allows you to generate text very easily.
-Requests are transmitted Ajax which allows for quick and enjoyable.
+**Lorem Ipsum Generator** is an application that allows you to generate text very easily. 
+Requests are transmitted in Ajax.
 
 [More informations about Lorem Ipsum](http://en.wikipedia.org/wiki/Lorem_ipsum)
 
